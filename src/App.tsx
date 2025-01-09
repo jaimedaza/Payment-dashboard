@@ -1,9 +1,10 @@
-import React from "react";
+import { TransactionsList } from "./components/TransactionList";
 
 function App() {
   return (
-    <div>
-      <h1 className="text-xl font-bold text-center">Payment Dashboard</h1>
+    <div className="p-4 max-w-3xl mx-auto">
+      <h1 className="text-2xl font-bold mb-4">Transactions Dashboard</h1>
+      <TransactionsList />
     </div>
   );
 }
