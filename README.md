@@ -1,46 +1,72 @@
-# Getting Started with Create React App
+# Payment Transaction Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a prototype of a Payment Transaction Dashboard built using **React.js**, **TypeScript**, and **TailwindCSS**. The application simulates displaying payment transaction data and allows users to filter the transactions based on a date range.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Transaction List**: Displays a list of payment transactions with details such as Transaction ID, Date, Description, and Amount (USD).
+- **Date Range Filter**: Allows users to filter transactions based on a specified date range.
+- **Pagination**: Limits the number of transactions shown per page (10 per page).
+- **Summary Section**: Displays the total number of transactions and the total transaction amount within the selected date range.
+- **Error Handling**: Shows user-friendly error messages in case of API request failures.
+- **Skeleton Loader**: Shows a skeleton loader when the transactions are being fetched.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **React.js**: JavaScript library for building user interfaces.
+- **TypeScript**: Strongly typed programming language that builds on JavaScript.
+- **TailwindCSS**: Utility-first CSS framework for designing modern UIs.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+To get started with the project, follow the steps below:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+You need to have **Node.js** and **npm** installed on your machine.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone https://github.com/jaimedaza/Payment-dashboard.git
 
-### `npm run eject`
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+2. Navigate to the project directory:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   cd Payment-dashboard
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+   ```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+3. Install the required dependencies:
 
-## Learn More
+   ```bash
+   npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. Start the development server:
+
+   ```bash
+   npm start
+   ```
+
+The application will be running at http://localhost:3000.
+
+## Project Structure
+
+```bash
+├── src
+│ ├── api # Contains the mock API and transaction data
+│ ├── components # Contains the React components (e.g., TransactionList, DateRangeFilter, etc.)
+│ ├── hooks # Custom hooks (e.g., useTransactions, usePagination, etc.)
+│ ├── App.tsx # Main app component
+│ ├── tailwind.config.js # TailwindCSS configuration
+│ └── ...
+└── public
+├── index.html # Main HTML file
+└── ...
+```
